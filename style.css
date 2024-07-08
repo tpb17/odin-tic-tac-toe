@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: repeat(3, minmax(100px, 1fr));
+    width: 50vw;
+    height: 50vw;
+    justify-items: stretch;
+    align-items: stretch;
+
+    gap: 10px;
+    background-color: black;
+}
+
+.gridSpace {
+    background-color: white;
+    color: black;
+    font-size: max(50px, 8vw);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clickable:hover {
+    background-color: pink;
+}
